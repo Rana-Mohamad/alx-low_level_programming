@@ -23,3 +23,8 @@
 	* Your program should compile without warning when using the -Wall gcc option
 6. Size is not grandeur, and territory does not make a nation: Write a C program that prints the size of various types on the computer it is compiled and run on.
 
+### Advanced tasks:
+7. Intel: Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+	* The C file name will be saved in the variable $CFILE.
+	* The output file should be named the same as the C file, but with the extension .s instead of .c
+
