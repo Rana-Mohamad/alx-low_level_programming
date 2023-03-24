@@ -2,6 +2,7 @@
 
 /**
   * _isupper - checks for upper case character
+  * @c: ckecks input
   * Return: '1' if it upper case character
   *	otherwise returns '0'
   */
