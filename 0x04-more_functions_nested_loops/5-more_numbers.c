@@ -7,9 +7,9 @@
 void more_numbers(void)
 {
 	char i = '0';
-	int ln = 0;
+	int lnum = 0;
 
-	for (ln >= 0; ln <= 9; ln++)
+	for (lnum >= 0; lnum <= 9; lnum++)
 	{
 		while (i >= '0' && i <= '14')
 		{
