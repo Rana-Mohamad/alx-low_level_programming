@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
   * print_diagonal - prints a diagonal line in the terminal
   * @n: input
@@ -16,9 +15,9 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (i = 1; i <= n; i++)
+		for (i = 1; i < n; i++)
 		{
-			for (spc = 1; spc <= n; spc++)
+			for (spc = 1; spc < n; spc++)
 				_putchar(' ');
 			_putchar('\\');
 			_putchar('\n');
