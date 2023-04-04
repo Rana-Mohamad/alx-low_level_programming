@@ -25,4 +25,5 @@
 	* Returns a pointer to the beginning of the located substring, or NULL if the substring is not found.
 6. Chess is mental torture: Write a function that prints the chessboard.
 	* Prototype: void print_chessboard(char (*a)[8]);
+7. The line of life is a ragged diagonal between duty and desire: Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
