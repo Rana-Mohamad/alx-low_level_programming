@@ -5,11 +5,10 @@
   * @n: an integer input
   * Return: 1 -->> if the input is a prime number, otherwise return 0;
   */
-int _check(int n, int i);
 
 int is_prime_number(int n)
 {
-	check = _check(n, n / 2);
+	int check = _check(n, n / 2);
 
 	if (check == 1)
 	{
@@ -17,7 +16,7 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (0);
+		return (0);q
 	}
 
 	/**
