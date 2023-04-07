@@ -14,4 +14,7 @@
 4. Once an idea has taken hold of the brain it's almost impossible to eradicate: Write a function that returns the value of x raised to the power of y.
 	* Prototype: int _pow_recursion(int x, int y);
 	* If y is lower than 0, the function should return -1
+5. Your subconscious is looking for the dreamer: Write a function that returns the natural square root of a number.
+	* Prototype: int _sqrt_recursion(int n);
+	* If n does not have a natural square root, the function should return -1
 
