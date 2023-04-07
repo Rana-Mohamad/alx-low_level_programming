@@ -21,11 +21,6 @@ int is_prime_number(int n)
 		return (0);
 	}
 
-	if (n == 1)
-	{
-		return (0);
-	}
-
 	/**
 	int i = 2;
 
@@ -50,7 +45,7 @@ int is_prime_number(int n)
 
 int _check(int n, int i)
 {
-	if (i == 1)
+	if (i == 1 || n == 1)
 	{
 		return (1);
 	}
