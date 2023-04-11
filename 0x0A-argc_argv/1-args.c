@@ -10,7 +10,14 @@
 
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	printf("%d\n", argc);
+	int i = 0, num;
+
+	while (i < argc)
+	{
+		num = i;
+		i++;
+	}
+	printf("%d\n", num);
 
 	return (0);
 }
