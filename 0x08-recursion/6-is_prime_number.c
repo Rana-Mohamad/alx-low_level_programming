@@ -9,7 +9,7 @@
 
 int primeCheck(int n, int i)
 {
-	if (if > 1)
+	if (i > 1)
 	{
 		if (n % i == 0)
 		{
@@ -19,6 +19,7 @@ int primeCheck(int n, int i)
 		{
 			primeCheck(n, i - 1);
 		}
+	}
 }
 
 /**
