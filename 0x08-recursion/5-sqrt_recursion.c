@@ -11,8 +11,10 @@
 
 int sqrtSearch(int low, int high, int N)
 {
-		int mid = (low + high) / 2;
+	int mid = (low + high) / 2;
 
+	if (low <= high)
+	{
 		if (mid * mid == N)
 		{
 			return (mid);
@@ -25,6 +27,8 @@ int sqrtSearch(int low, int high, int N)
 		{
 			return (sqrtSearch(low, mid - 1, N));
 		}
+	}
+	return (high);
 }
 
 /**
