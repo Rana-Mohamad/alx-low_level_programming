@@ -9,7 +9,11 @@
 
 int primeCheck(int n, int i)
 {
-	if (i > 1)
+	if (i == 1)
+	{
+		return (1);
+	}
+	else if (i > 1)
 	{
 		if (n % i == 0)
 		{
