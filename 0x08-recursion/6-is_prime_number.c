@@ -17,7 +17,7 @@ int primeCheck(int n, int i)
 		}
 		else
 		{
-			primeCheck(n, i - 1);
+			return (primeCheck(n, i - 1));
 		}
 	}
 }
