@@ -25,7 +25,7 @@ int sqrtSearch(int low, int high, int N)
 		}
 		else
 		{
-			return (-1); //(sqrtSearch(low, mid - 1, N));
+			return (-1);
 		}
 	}
 	return (high);
