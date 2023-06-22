@@ -12,8 +12,9 @@ int last_index(char *s)
 
 	if (*s > '\0')
 	{
-		return (i += last_index(s + 1) + 1);
+		i += last_index(s + 1) + 1;
 	}
+	return (i);
 }
 
 /**
