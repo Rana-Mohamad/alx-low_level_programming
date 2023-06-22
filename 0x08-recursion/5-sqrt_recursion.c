@@ -40,9 +40,9 @@ int sqrtSearch(int low, int high, int N)
 	else if (low == high)			/*this means n doesn't have a perfect square*/
 		return (-1);
 	else if (guess_squared < n)		/*overshoot g if sg is less than the n*/
-		return (_sqrtSearch(guess + 1, high, N));
+		return (sqrtSearch(guess + 1, high, N));
 	else					/*undershoot g if sg is more than the n*/
-		return (_sqrtSearch(low, guess - 1, N));
+		return (sqrtSearch(low, guess - 1, N));
 }
 
 /**
