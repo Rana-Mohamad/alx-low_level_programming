@@ -48,7 +48,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (sqrtSearch(1, n, n));
+		return (sqrtSearch(1, n));
 	}
 }
 
