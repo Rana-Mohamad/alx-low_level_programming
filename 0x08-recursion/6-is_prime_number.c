@@ -9,20 +9,17 @@
 
 int primeCheck(int n, int i)
 {
-	if (i == 1)
+	if (i >= n)
 	{
 		return (1);
 	}
-	else if (i > 1)
+	else if (n % i == 0)
 	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-		else
-		{
-			return (primeCheck(n, i - 1));
-		}
+		return (0);
+	}
+	else
+	{
+		return (primeCheck(n, i + 1));
 	}
 }
 
@@ -44,6 +41,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (primeCheck(n, n - 1));
+		return (primeCheck(n, 2));
 	}
 }
