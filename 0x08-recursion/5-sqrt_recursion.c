@@ -9,26 +9,19 @@
  * Return: the square root
  */
 
-int sqrtSearch(int low, int high, int N)
+int sqrtSearch(int low, int n)
 {
-	int mid = (low + high) / 2;
-
-	if (low <= high)
+	if (low * low == n)
 	{
-		if (mid * mid == N)
-		{
-			return (mid);
-		}
-		else if (mid * mid < N)
-		{
-			return (sqrtSearch(mid + 1, high, N));
-		}
-		else
-		{
-			return (sqrtSearch(low, mid - 1, N));
-		}
+		return (low);
 	}
-	return (high);
+	else if (low * low < n)
+	{
+		return (sqrtSearch(low + 1, n));
+	}
+	else
+	{
+		return (-1);
 }
 
 /**
