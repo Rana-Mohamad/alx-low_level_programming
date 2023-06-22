@@ -3,9 +3,7 @@
 /**
  * sqrtSearch - a function to find the square root of a number
  * @low: the lowest number
- * @high: the highest number
- * @N: an integer number
- * @mid: the mid-value of the range
+ * @n: an integer number
  * Return: the square root
  */
 
