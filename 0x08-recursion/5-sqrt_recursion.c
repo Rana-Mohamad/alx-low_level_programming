@@ -10,7 +10,7 @@
  */
 
 int sqrtSearch(int low, int high, int N)
-{/**
+{
 	int mid = (low + high) / 2;
 
 	if (low <= high)
@@ -29,20 +29,6 @@ int sqrtSearch(int low, int high, int N)
 		}
 	}
 	return (high);
-	*/
-	int guess, guess_squared;
-
-	guess = (low + high) / 2;		/*get guess (g)*/
-	guess_squared = guess * guess;		/*square guess (sg)*/
-
-	if (guess_squared == N)			/*if squared guess == n return guess*/
-		return (guess);
-	else if (low == high)			/*this means n doesn't have a perfect square*/
-		return (-1);
-	else if (guess_squared < n)		/*overshoot g if sg is less than the n*/
-		return (sqrtSearch(guess + 1, high, N));
-	else					/*undershoot g if sg is more than the n*/
-		return (sqrtSearch(low, guess - 1, N));
 }
 
 /**
