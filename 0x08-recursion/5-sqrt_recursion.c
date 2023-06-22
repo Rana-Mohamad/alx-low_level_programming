@@ -22,6 +22,7 @@ int sqrtSearch(int low, int n)
 	else
 	{
 		return (-1);
+	}
 }
 
 /**
